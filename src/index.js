@@ -34,11 +34,11 @@ flavors.push(flavourCollection[Math.floor(Math.random() * flavourCollection.leng
   }
 } else if (name.length > 3 && name.includes(' ')) {
   flavors.push(flavourCollection[name.split(' ')[1].length])
+} else {
+  flavors.push(flavourCollection[Math.floor(Math.random() * flavourCollection.length)])
+  flavors.push(flavourCollection[Math.floor(Math.random() * flavourCollection.length)])
 }
 recipeFrame.textContent = 'One ice cream with the flavours: ' + flavors.toString() + ' coming up just for you, ' + name + '!'
 }
 
 document.getElementById("generate").addEventListener("click", displayRecipe); 
-
-
-const naming = ['Awesome', 'Brilliant', 'Candidly', 'Delightful', ]
