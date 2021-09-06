@@ -1,3 +1,10 @@
 h2 {
   color: hotpink;
 }
+
+button {
+   background-color: #add5d5;
+   padding: 10px 20px;
+   display: block;
+   border-radius: 20px;
+}
